@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="login1.css" />
+    <title>SAYED'S STORE</title>
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="container" id="container">
+      <!-- Row -->
+      <div class="row">
+        <!-- Sign Up -->
+        <div id="login-area" class="col align-center flex-col sign-up">
+          <div class="form-wrapper align-center">
+            <form class="form sign-up">
+              <div class="input-group">
+                <i class="bx bxs-user"></i>
+                <input type="text" placeholder="Username" />
+              </div>
+              <div class="input-group">
+                <i class="bx bx-mail-send"></i>
+                <input type="email" placeholder="Email" />
+              </div>
+              <div class="input-group">
+                <i class="bx bxs-lock-alt"></i>
+                <input id="password1" type="password" placeholder="Password" />
+              </div>
+              <div class="input-group">
+                <i class="bx bxs-lock-alt"></i>
+                <input id="confirm-password1" type="password" placeholder="Confirm password" />
+              </div>
+              <button id="login1">Sign up</button>
+              <p>
+                <span>Already have an account?</span>
+                <b id="sign-in">Sign in here</b>
+              </p>
+            </form>
+          </div>
+
+          <div class="form-wrapper">
+            <div class="social-list align-center sign-up">
+              <div class="align-center facebook-bg">
+                <i class="bx bxl-facebook"></i>
+              </div>
+              <div class="align-center google-bg">
+                <i class="bx bxl-google"></i>
+              </div>
+              <div class="align-center twitter-bg">
+                <i class="bx bxl-twitter"></i>
+              </div>
+              <div class="align-center insta-bg">
+                <i class="bx bxl-instagram-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Sign Up -->
+        <!-- Sign In -->
+        <div id="login-area2" class="col align-center flex-col sign-in">
+          <div class="form-wrapper align-center">
+            <div class="form sign-in">
+              <div class="input-group">
+                <i class="bx bxs-user"></i>
+                <input id="username" type="text" placeholder="Username" />
+              </div>
+              <div class="input-group">
+                <i class="bx bxs-lock-alt"></i>
+                <input id="password" type="password" placeholder="Password" />
+              </div>
+              <!-- <input type="submit" value="Login" onclick="validate"> -->
+              <button id="login2">Sign in</button>
+              <p>
+                <b>Forgot password?</b>
+              </p>
+              <p>
+                <span> Don't have an account? </span>
+                <b id="sign-up">Sign up here</b>
+              </p>
+            </div>
+          </div>
+
+          <div class="form-wrapper">
+            <div class="social-list align-center sign-in">
+              <div class="align-center facebook-bg">
+                <i class="bx bxl-facebook"></i>
+              </div>
+              <div class="align-center google-bg">
+                <i class="bx bxl-google"></i>
+              </div>
+              <div class="align-center twitter-bg">
+                <i class="bx bxl-twitter"></i>
+              </div>
+              <div class="align-center insta-bg">
+                <i class="bx bxl-instagram-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Sign In -->
+      </div>
+      <!-- End Row -->
+      <!-- Content Section -->
+      <div class="row content-row">
+        <!-- Sign In Content -->
+        <div class="col align-items flex-col text-aline">
+          <div class="text sign-in">
+            <h2>Welcome Back</h2>
+            <p>
+              You Enter you valid user name and password, and visit Sayed's Store
+            </p>
+          </div>
+          <div class="img sign-in">
+            <img src="images/bg1.svg" alt="" />
+          </div>
+        </div>
+
+        <!-- Sign Up Content -->
+        <div class="col align-items flex-col">
+          <div class="img sign-up">
+            <img src="images/bg2.svg" alt="" />
+          </div>
+          <div class="text sign-up">
+            <h2>Join with us</h2>
+            <p>
+              Thanks to you for coming Sayed's Store and join our big community
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Container -->
+
+    <!-- Script -->
+
+    <script>
+            const container = document.getElementById("container");
+            const signIn = document.getElementById("sign-in");
+            const signUp = document.getElementById("sign-up");
+
+            setTimeout(() => {
+              container.classList.add("sign-in");
+            }, 200);
+
+            const toggle = () => {
+              container.classList.toggle("sign-in");
+              container.classList.toggle("sign-up");
+            };
+
+            signIn.addEventListener("click", toggle);
+            signUp.addEventListener("click", toggle);
+
+
+
+            const loginBtn2 = document.getElementById('login2');
+            loginBtn2.addEventListener("click", function(){
+
+              var username = document.getElementById('username').value;
+              var password = document.getElementById('password').value;
+              if(username == "admin" && password == "user"){
+                alert("login successfully")
+                return window.location = "http://127.0.0.1:5500/ecommerce_website/index.html"
+              }
+              
+              else{
+                alert("login failed")
+                
+              }
+
+            })
+
+            const loginBtn1 = document.getElementById('login1');
+            loginBtn1.addEventListener("click", function(){
+
+              var password1 = document.getElementById('password1').value;
+              var confirmPassword1 = document.getElementById('confirm-password1').value;
+
+              if(password1 == "user" && confirmPassword1 == "user"){
+                alert("login successfully")
+                return window.location = "http://127.0.0.1:5500/phone_website-master/index.html#"
+              }
+              
+              else{
+                alert("login failed")
+                
+              }
+
+              
+             
+
+            })
+    </script>
+    <!-- <script src="login1.js"></script> -->
+  </body>
+</html>
