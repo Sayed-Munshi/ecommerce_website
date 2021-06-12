@@ -7,6 +7,9 @@
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+  <!-- font as -->
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet" />
@@ -21,7 +24,7 @@
   <!-- Custom StyleSheet -->
   <link rel="stylesheet" href="styles.css" />
 
-  <title>HEADPHONES</title>
+  <title>smart phone</title>
 </head>
 
 <body>
@@ -37,13 +40,13 @@
 
           <div class="nav__logo">
             <a href="/" class="scroll-link">
-                SAYED'S STORE
+              SAYED'S STORE
             </a>
           </div>
 
           <div class="nav__menu">
             <div class="menu__top">
-              <span class="nav__category">HEADPHONES</span>
+              <span class="nav__category">PHONE</span>
               <a href="#" class="close__toggle">
                 <svg>
                   <use xlink:href="./images/sprite.svg#icon-cross"></use>
@@ -52,20 +55,20 @@
             </div>
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="http://127.0.0.1:5500/ecommerce_website/product.html##shop" class="nav__link">Home</a>
+                <a href="http://127.0.0.1:5501/index.html" class="nav__link">Home</a>
               </li>
               <li class="nav__item">
-                <a href="http://127.0.0.1:5500/ecommerce_website/product.html##shop" class="nav__link">Products</a>
+                <a href="http://127.0.0.1:5501/index.html" class="nav__link">Products</a>
               </li>
               <li class="nav__item">
-                <a href="http://127.0.0.1:5500/ecommerce_website/product.html##shop" class="nav__link">Blog</a>
+                <a href="http://127.0.0.1:5501/index.html" class="nav__link">Blog</a>
               </li>
               <li class="nav__item">
-                <a href="http://127.0.0.1:5500/ecommerce_website/product.html##shop" class="nav__link">Contact</a>
+                <a href="http://127.0.0.1:5501/index.html" class="nav__link">Contact</a>
               </li>
             </ul>
           </div>
-
+          <!-- cart are -->
           <div class="nav__icons">
             <a href="#" class="icon__item">
               <svg class="icon__user">
@@ -74,18 +77,14 @@
             </a>
 
             <a href="#" class="icon__item">
-              <svg class="icon__search">
-                <use xlink:href="./images/sprite.svg#icon-search"></use>
-              </svg>
-            </a>
-
-            <a href="#" class="icon__item">
               <svg class="icon__cart">
                 <use xlink:href="./images/sprite.svg#icon-shopping-basket"></use>
               </svg>
+              
               <!-- <span id="cart__total"> 1</span> -->
               <input id="cart__total" type="text" min="1" value="1" max="10" class="counter-btn">
             </a>
+
           </div>
         </nav>
       </div>
@@ -118,31 +117,33 @@
             <div class="details__container--left">
               <div class="product__pictures">
                 <div class="pictures__container">
-                  <img class="picture" src="images/products/headphone/headphone1.jpeg" id="pic1" />
+                  <img class="picture" src="images/products/laptop/6.jpg" id="pic1" />
                 </div>
                 <div class="pictures__container">
-                  <img class="picture" src="images/products/headphone/headphone10.jpeg" id="pic2" />
+                  <img class="picture" src="images/products/laptop/5.jpg" id="pic2" />
                 </div>
                 <div class="pictures__container">
-                  <img class="picture" src="images/products/headphone/headphone11.jpeg" id="pic3" />
+                  <img class="picture" src="images/products/laptop/4.jpg" id="pic3" />
                 </div>
                 <div class="pictures__container">
-                  <img class="picture" src="images/products/headphone/headphone12.jpeg" id="pic4" />
+                  <img class="picture" src="images/products/laptop/3.jpg" id="pic4" />
                 </div>
                 <div class="pictures__container">
-                  <img class="picture" src="images/products/headphone/headphone2.jpeg" id="pic5" />
+                  <img class="picture" src="images/products/laptop/2.jpg" id="pic5" />
                 </div>
               </div>
               <div class="product__picture" id="product__picture">
                 <!-- <div class="rect" id="rect"></div> -->
                 <div class="picture__container">
-                  <img src="images/products/headphone/headphone3.jpeg" id="pic" />
+                  <img src="images/products/laptop/MacBookPro.png" id="pic" />
                 </div>
               </div>
               <div class="zoom" id="zoom"></div>
             </div>
 
+            <!-- add to cart function -->
             <div class="product-details__btn">
+
               <a id="add-to-cart" class="add" href="#">
                 <span>
                   <svg>
@@ -150,7 +151,9 @@
                   </svg>
                 </span>
                 ADD TO CART</a>
-              <a class="buy" href="http://127.0.0.1:5501/checkout.html">
+
+
+              <a id="buy-now" class="buy" href="http://127.0.0.1:5501/checkout.html">
                 <span>
                   <svg>
                     <use xlink:href="./images/sprite.svg#icon-credit-card"></use>
@@ -163,7 +166,7 @@
 
           <div class="product-detail__right">
             <div class="product-detail__content">
-              <h3>BOAT HEADPHONES</h3>
+              <h3>Apple iPhone XR</h3>
               <div class="price">
                 <span class="new__price">$250.99</span>
               </div>
@@ -211,8 +214,8 @@
                       </select>
                     </div>
                   </li>
-                  <!-- Quantity  -->
                   <li>
+                    <!-- Quantity area -->
 
                     <div class="input-counter">
                       <span>Quantity:</span>
@@ -239,15 +242,15 @@
                   </li>
                   <li>
                     <span>Brand:</span>
-                    <a href="#">BOAT</a>
+                    <a href="#">Apple</a>
                   </li>
                   <li>
                     <span>Product Type:</span>
-                    <a href="#">HEADPHONES</a>
+                    <a href="#">Phone</a>
                   </li>
                   <li>
                     <span>Availability:</span>
-                    <a href="#" class="in-stock">In Stock (17 Items)</a>
+                    <a href="#" class="in-stock">In Stock (7 Items)</a>
                   </li>
                 </ul>
                 <div class="product-info__btn">
@@ -401,10 +404,10 @@
                 <li class="glide__slide">
                   <div class="product">
                     <div class="product__header">
-                      <a href="#"><img src="images/products/headphone/headphone4.jpeg" alt="product"></a>
+                      <a href="#"><img src="images/products/iPhone/iphone1.jpeg" alt="product"></a>
                     </div>
                     <div class="product__footer">
-                      <h3>Samsung</h3>
+                      <h3>Samsung Galaxy</h3>
                       <div class="rating">
                         <svg>
                           <use xlink:href="./images/sprite.svg#icon-star-full"></use>
@@ -423,7 +426,7 @@
                         </svg>
                       </div>
                       <div class="product__price">
-                        <h4>$500</h4>
+                        <h4>$900</h4>
                       </div>
                       <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
                     </div>
@@ -456,10 +459,10 @@
                 <li class="glide__slide">
                   <div class="product">
                     <div class="product__header">
-                      <a href="#"><img src="images/products/headphone/headphone5.jpeg" alt="product"></a>
+                      <a href="#"><img src="images/products/iPhone/iphone2.jpeg" alt="product"></a>
                     </div>
                     <div class="product__footer">
-                      <h3>Apple</h3>
+                      <h3>Apple iPhone 11</h3>
                       <div class="rating">
                         <svg>
                           <use xlink:href="./images/sprite.svg#icon-star-full"></use>
@@ -510,10 +513,10 @@
                 <li class="glide__slide">
                   <div class="product">
                     <div class="product__header">
-                      <a href="#"><img src="images/products/headphone/headphone6.jpeg" alt="product"></a>
+                      <a href="#"><img src="images/products/sumsung/samsung3.jpeg" alt="product"></a>
                     </div>
                     <div class="product__footer">
-                      <h3>Samsung</h3>
+                      <h3>Samsung Galaxy</h3>
                       <div class="rating">
                         <svg>
                           <use xlink:href="./images/sprite.svg#icon-star-full"></use>
@@ -532,7 +535,7 @@
                         </svg>
                       </div>
                       <div class="product__price">
-                        <h4>$550</h4>
+                        <h4>$850</h4>
                       </div>
                       <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
                     </div>
@@ -564,10 +567,10 @@
                 <li class="glide__slide">
                   <div class="product">
                     <div class="product__header">
-                      <a href="#"><img src="images/products/headphone/headphone7.jpeg" alt="product"></a>
+                      <a href="#"><img src="images/products/iPhone/iphone2.jpeg" alt="product"></a>
                     </div>
                     <div class="product__footer">
-                      <h3>sony</h3>
+                      <h3>Apple iPhone 11</h3>
                       <div class="rating">
                         <svg>
                           <use xlink:href="./images/sprite.svg#icon-star-full"></use>
@@ -618,7 +621,7 @@
                 <li class="glide__slide">
                   <div class="product">
                     <div class="product__header">
-                      <a href="#"><img src="images/products/headphone/headphone8.jpeg" alt="product"></a>
+                      <a href="#"><img src="images/products/headphone/headphone4.jpeg" alt="product"></a>
                     </div>
                     <div class="product__footer">
                       <h3>Sony WH-CH510</h3>
@@ -673,10 +676,10 @@
                 <li class="glide__slide">
                   <div class="product">
                     <div class="product__header">
-                      <a href="#"><img src="images/products/headphone/headphone9.jpeg" alt="product"></a>
+                      <a href="#"><img src="images/products/sumsung/samsung1.jpeg" alt="product"></a>
                     </div>
                     <div class="product__footer">
-                      <h3>Sony WH-CH510</h3>
+                      <h3>Samsung Galaxy</h3>
                       <div class="rating">
                         <svg>
                           <use xlink:href="./images/sprite.svg#icon-star-full"></use>
@@ -835,10 +838,10 @@
                 <li class="glide__slide">
                   <div class="product">
                     <div class="product__header">
-                      <a href="#"><img src="images/products/headphone/headphone1.jpeg" alt="product"></a>
+                      <a href="#"><img src="images/products/iPhone/iphone1.jpeg" alt="product"></a>
                     </div>
                     <div class="product__footer">
-                      <h3>Sony WH-CH510</h3>
+                      <h3>Apple iPhone XR</h3>
                       <div class="rating">
                         <svg>
                           <use xlink:href="./images/sprite.svg#icon-star-full"></use>
@@ -1501,7 +1504,7 @@
                 <use xlink:href="./images/sprite.svg#icon-location"></use>
               </svg>
             </span>
-            42 Donia, Sonir Akra, Dhaka, Bangladesh
+            42 Dream House, Dreammy street, 7131 Dreamville, USA
           </div>
           <div>
             <span>
@@ -1509,7 +1512,7 @@
                 <use xlink:href="./images/sprite.svg#icon-envelop"></use>
               </svg>
             </span>
-            mdsayed3000@gmail.com
+            company@gmail.com
           </div>
           <div>
             <span>
@@ -1517,7 +1520,7 @@
                 <use xlink:href="./images/sprite.svg#icon-phone"></use>
               </svg>
             </span>
-            +8801648882081
+            456-456-4512
           </div>
           <div>
             <span>
@@ -1525,7 +1528,7 @@
                 <use xlink:href="./images/sprite.svg#icon-paperplane"></use>
               </svg>
             </span>
-            Dhaka Bangladesh
+            Dream City, USA
           </div>
         </div>
       </div>
@@ -1562,6 +1565,7 @@
   <script src="./js/index.js"></script>
   <script src="./js/slider.js"></script>
 
+  <!-- add-to-cart count -->
   <script>
     document.getElementById('add-to-cart').addEventListener("click", function(){
       console.log("click me");
